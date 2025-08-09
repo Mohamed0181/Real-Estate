@@ -1,0 +1,25 @@
+<odoo>
+    <record id="change_state" model="ir.ui.view">
+        <field name="name">Change State</field>
+        <field name="model">change_state</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                     <field name="property_id" invisible="True"/>
+                    <field name="state"/>
+                    <field name="reason"/>
+                </group>
+               <footer>
+                   <button string="Confirm" type="object" name="action_confirm" class="btn-primary"/>
+                   <button string="Cancel" special="cancel" class="btn-secondary"/>
+               </footer>
+            </form>
+        </field>
+    </record>
+    <record id="change_state_action" model="ir.actions.act_window">
+        <field name="name">Change State</field>
+        <field name="res_model">change_state</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

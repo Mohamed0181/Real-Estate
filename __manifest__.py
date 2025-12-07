@@ -9,7 +9,7 @@
                 ],
 
     'data':[ 'security/ir.model.access.csv',
-             'security\security.xml',
+             'security/security.xml',
              'data/sequence.xml',
             'views/base_menu.xml',
              'views/property_view.xml',
